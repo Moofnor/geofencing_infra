@@ -28,7 +28,7 @@ services:
     ports:
       - "9851:9851"
     volumes:
-      - ../tile38/config:/data
+      - ./tile38/config:/data
     entrypoint:
             - bin/sh
     command: -c "tile38-server -d /data -vv"
